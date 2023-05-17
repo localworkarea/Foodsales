@@ -1,0 +1,43 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(5);
+  text-align: center;
+  border-radius: rem(50);
+  line-height: 1.23;
+
+  transition: all 0.3s ease 0s;
+  &_blue {
+    background-color: $blue;
+    color: white;
+    @media (any-hover: hover){
+      &:hover{
+        background-color: $orange;
+      }
+    }
+  }
+  &_orange {
+    background-color: $orange;
+    color: white;
+    @media (any-hover: hover){
+      &:hover{
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+.text-yellow {
+  color: $yellow;
+}
+.text-blue {
+  color: $blue-light;
+}
+.bg-blue {
+  background-color: $blue-light;
+}
+.bg-yellow {
+  background-color: $yellow;
+}

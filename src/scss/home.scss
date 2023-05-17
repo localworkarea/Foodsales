@@ -1,0 +1,193 @@
+//=================================================
+.main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	// .main__bg
+	&__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    &::after {
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    }
+	}
+	// .main__bg-img
+	&__bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+	}
+  // .main__container
+  &__container {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  // .main__logo
+  &__logo {
+    @include adaptiveValue("margin-bottom", 77, 29);
+  }
+  // .main__logo-img
+  &__logo-img {
+    width: 100%;
+    height: auto;
+  }
+  // .main__text
+  &__text {
+    font-weight: 600;
+    @include adaptiveValue("font-size", 30, 13);
+    line-height: calc(36/30);
+    text-align: center;
+
+    color: rgba(49, 39, 131, 0.86);
+    max-width: rem(830);
+
+    position: relative;
+    &::before {
+      content:'';
+      position: absolute;
+      @include adaptiveValue("top", -50, -14);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: rem(610);
+      height: rem(2);
+      background-color: $blue;
+      @media (max-width:$mobile){
+         width: 61%; 
+      }
+    }
+    @include adaptiveValue("margin-bottom", 77, 29);
+  }
+  // .main__btn
+  &__btn {
+    @include adaptiveValue("width", 410, 184);
+    @include adaptiveValue("height", 82, 38);
+    box-shadow: 0px 4px 21px rgba(49, 39, 131, 0.5);
+
+    font-weight: 800;
+    @include adaptiveValue("font-size", 30, 13);
+    @media (max-width:$mobile){
+       text-transform: uppercase; 
+    }
+  }
+}
+//=================================================
+.aid {
+  // .aid__flag
+  &__flag {
+  }
+  // .aid__container
+  &__container {
+    @include adaptiveValue("padding-top", 100, 50);
+    @include adaptiveValue("padding-bottom", 100, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // .aid__title
+  &__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 34, 20);
+    line-height: calc(41/34);
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+    }
+  }
+  // .aid__counter
+  &__counter {
+  }
+  // .aid__list
+  &__list {
+    padding-left: rem(20);
+  
+  }
+  // .aid__item
+  &__item {
+    font-weight: 500;
+    @include adaptiveValue("font-size", 24, 16);
+    line-height: calc(28/24);
+    position: relative;
+    &::before {
+      content:'';
+      position: absolute;
+      left: rem(-20);
+      top: 50%;
+      border-radius: 50%;
+      width: rem(4);
+      height: rem(4);
+      background-color: $mainColor;
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(4);
+    }
+  }
+
+}
+.flag-aid {
+  padding: rem(13) 0;
+  // .flag-aid__text
+  &__text {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 60, 23);
+    line-height: calc(73/60);
+    color: white;
+    text-align: center;
+  }
+}
+.counter-aid {
+  display: flex;
+  justify-content: center;
+  @include adaptiveValue("column-gap", 97, 25, 0, 1920, 768);
+  &:not(:last-child) {
+    @include adaptiveValue("margin-bottom", 100, 50);
+  }
+  @media (max-width:600px){
+      flex-direction: column-reverse;
+      row-gap: rem(20);
+  }
+  // .counter-aid__block
+  &__block {
+    text-align: center;
+  }
+  // .counter-aid__num
+  &__num {
+    @include adaptiveValue("font-size", 90, 35);
+    font-weight: 700;
+    line-height: 1.2;
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+  // .counter-aid__count
+  &__count {
+    display: inline-block;
+    &.count-one {
+      @include adaptiveValue("width", 236, 100, 0, 1920, 320);
+    }
+    &.count-two {
+      @include adaptiveValue("width", 141, 60, 0, 1920, 320);
+    }
+  }
+  // .counter-aid__text
+  &__text {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 24, 16);
+  }
+}

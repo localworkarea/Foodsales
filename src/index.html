@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Головна | Foodsales"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="main">
+					<div class="main__bg">
+						<img src="@img/main.png" class="main__bg-img" alt="background">
+					</div>
+					<div class="main__container">
+						<div class="main__logo">
+							<img src="@img/logo.png" class="main__logo-img" alt="logo">
+						</div>
+						<p class="main__text">«Food sales» – це 16 відомих торгових марок, представлених на всій території України і понад 1000 найменувань продукції, що займають лідируючі позиції в свідомості споживачів завдяки активній маркетинговій позиції на ринку.</p>
+						<button type="button" class="main__btn btn btn_blue">Купити на FOODSALES</button>
+					</div>
+				</section>
+				<section class="aid">
+					<div class="aid__flag flag-aid bg-blue">
+						<div class="flag-aid__text">Працюємо</div>
+					</div>
+					<div class="aid__flag flag-aid bg-yellow">
+						<div class="flag-aid__text">заради перемоги</div>
+					</div>
+					<div class="aid__container">
+						<h2 class="aid__title">Станом на лютий 2023 року видано:</h2>
+						<div class="aid__counter counter-aid">
+							<div class="counter-aid__block text-yellow">
+								<p data-watch data-watch-once class="counter-aid__num">
+									<span  data-digits-counter  data-digits-counter-speed="2500"  class="counter-aid__count count-one">13053</span> тонн
+								</p>
+								<p class="counter-aid__text">благодійної продукції</p>
+							</div>
+							<div class="counter-aid__block text-blue">
+								<p data-watch data-watch-once class="counter-aid__num">
+									<span  data-digits-counter  data-digits-counter-speed="2500"  class="counter-aid__count count-two">973</span> млн грн
+								</p>
+								<p class="counter-aid__text">у гривневому еквіваленті</p>
+							</div>
+						</div>
+						<h2 class="aid__title">Першочергово допомагаємо:</h2>
+						<ul class="aid__list">
+							<li class="aid__item">людям, які перебувають в регіонах бойових дій;</li>
+							<li class="aid__item">захисникам й рятувальникам;</li>
+							<li class="aid__item">громадам;</li>
+							<li class="aid__item">лікарням й пологовим будинкам;</li>
+							<li class="aid__item">благодійним установам, які дбають про дітей-сиріт і літніх людей;</li>
+							<li class="aid__item">людям, які через війну залишилися без дому та засобів для існування.</li>
+						</ul>
+					</div>
+				</section>
+	
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
