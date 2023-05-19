@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230519141059">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230519145153">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +23,9 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item"><a href="#" class="menu__link">Про компанію</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Наші бренди</a></li>
+							<li class="menu__item"><a href="#" data-goto-header data-goto=".products" class="menu__link">Наші бренди</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Партнерам</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+							<li class="menu__item"><a href="#" data-goto-header data-goto=".footer" class="menu__link">Контакти</a></li>
 						</ul>
 					</nav>
 					<button type="button" class="menu__btn btn btn_blue">Купити</button>
@@ -47,7 +47,9 @@
 						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" class="main__logo-img" alt="logo"></picture>
 					</div>
 					<p class="main__text">«Food sales» – це 16 відомих торгових марок, представлених на всій території України і понад 1000 найменувань продукції, що займають лідируючі позиції в свідомості споживачів завдяки активній маркетинговій позиції на ринку.</p>
-					<button type="button" class="main__btn btn btn_blue">Купити на FOODSALES</button>
+					<div class="main__btn-wrapper">
+						<button type="button" class="main__btn btn btn_blue">Купити на FOODSALES</button>
+					</div>
 				</div>
 			</section>
 			<section class="aid">
@@ -324,7 +326,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230519141059"></script>
+	<script src="js/app.min.js?_v=20230519145153"></script>
 </body>
 
 </html>
