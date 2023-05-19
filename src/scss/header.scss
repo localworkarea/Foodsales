@@ -213,12 +213,13 @@
 	@media (max-width: 1200px) {
 		display: block;
 		position: relative;
-		width: rem(30);
-		height: rem(18);
+		width: rem(25);
+		height: rem(12);
 		z-index: 5;
 		@media (any-hover: none) {
 			cursor: default;
 		}
+
 		span,
 		&::before,
 		&::after {

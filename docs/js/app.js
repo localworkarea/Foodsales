@@ -361,6 +361,28 @@
             }));
         }
     }), 0);
+    const items = document.querySelectorAll(".item");
+    const productsBlock = document.querySelectorAll(".products__block");
+    if (productsBlock) productsBlock.forEach((productsBlock => {
+        productsBlock.addEventListener("mouseenter", (() => {
+            productsBlock.classList.add("_hover-block");
+        }));
+        productsBlock.addEventListener("mouseleave", (() => {
+            setTimeout((() => {
+                productsBlock.classList.remove("_hover-block");
+            }), 0);
+        }));
+    }));
+    if (items) items.forEach((item => {
+        item.addEventListener("mouseenter", (() => {
+            item.classList.add("_hover");
+        }));
+        item.addEventListener("mouseleave", (() => {
+            setTimeout((() => {
+                item.classList.remove("_hover");
+            }), 0);
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     addTouchClass();

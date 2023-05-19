@@ -19,14 +19,14 @@
     @media (max-width:650px){
         flex-direction: column;
         align-items: center;
-        row-gap: rem(25);
+        row-gap: rem(15);
         text-align: center;
     }
   }
   // .footer__logo
   &__logo {
     img {
-      @include adaptiveValue("width", 239,130,0,1920,320 );
+      @include adaptiveValue("width", 239,150,0,1920,375 );
       height: auto;
     }
     @media (max-width:650px){
@@ -46,7 +46,7 @@
   // .footer__copyright-txt
   &__copyright-txt {
     font-weight: 400;
-    @include adaptiveValue("font-size", 18, 10);
+    @include adaptiveValue("font-size", 18, 12);
     line-height: calc(21/18);
     max-width: rem(346);
     @media (max-width:1100px){
@@ -72,7 +72,7 @@
   &__tel-txt {
     text-transform: uppercase;
     font-weight: 600;
-    @include adaptiveValue("font-size", 18, 10);
+    @include adaptiveValue("font-size", 18, 12);
     line-height: calc(21/18);
     @media (max-width:$mobileSmall){
        font-weight: 700; 
@@ -81,7 +81,7 @@
   // .contacts-ftr__tel-numb
   &__tel-numb {
     font-weight: 600;
-    @include adaptiveValue("font-size", 24, 10);
+    @include adaptiveValue("font-size", 24, 12);
     line-height: calc(29/24);
     @media (max-width:$mobileSmall){
       font-weight: 500; 
@@ -90,7 +90,7 @@
   // .contacts-ftr__email-txt
   &__email-txt {
     font-weight: 600;
-    @include adaptiveValue("font-size", 18, 10);
+    @include adaptiveValue("font-size", 18, 12);
     line-height: calc(21/18);
     @media (max-width:$mobileSmall){
       font-weight: 500; 

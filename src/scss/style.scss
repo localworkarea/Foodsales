@@ -24,7 +24,11 @@ $fontSize: rem(16); // де 14(px) - розмір шрифту за замовч
 // Основні кольори
 $mainColor: #000; // Колір шрифту за замовчуванням
 $blue: #312783;
+// filter: invert(13%) sepia(68%) saturate(2909%) hue-rotate(239deg) brightness(91%) contrast(97%);
+// ------------------------------
 $orange: #F07D00;
+// filter: invert(49%) sepia(17%) saturate(4670%) hue-rotate(8deg) brightness(100%) contrast(104%);
+// ------------------------------
 $blue-light: #0057B8;
 $yellow: #F6C000;
 
@@ -49,10 +53,10 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 
 // Брейк-поїнти
 $pc: em($containerWidth); // ПК, ноутбуки, деякі планшети у горизонтальному положенні
-$tablet: em(991.98); // Планшети, деякі телефони в горизонтальному положенні
-$mobile: em(767.98); // Телефони L
-$mobileSmall: em(479.98); // Телефони S
-$mobileXS: em(374.98); // Телефони S
+$tablet: em(992); // Планшети, деякі телефони в горизонтальному положенні
+$mobile: em(768); // Телефони L
+$mobileSmall: em(478); // Телефони S
+$mobileXS: em(375); // Телефони S
 
 // Тип адаптива:
 // 1 = чуйність (у контейнера немає брейкпоінтів),
