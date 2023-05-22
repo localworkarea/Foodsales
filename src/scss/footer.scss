@@ -1,5 +1,8 @@
 //=================================================================
 .footer {
+  .brand-page & {
+    background-color: #F6F6F6;
+  }
   // .footer__container
   &__container {
     @include adaptiveValue("padding-left", 50, 15, 0, 1920, 1200);
